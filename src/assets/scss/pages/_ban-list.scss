@@ -1,0 +1,31 @@
+@import '../variables';
+.tableForBanList {
+  margin-top: 14px;
+
+  table {
+    overflow: hidden;
+  }
+
+  td {
+    padding: 25px 20px;
+    @media (max-width: $largeScreens) {
+      padding: 17px 16px;
+    }
+  }
+
+  thead th:nth-child(1) {
+    width: 204px;
+  }
+
+  thead th:nth-child(2) {
+    width: 215px;
+  }
+
+  thead th:nth-child(3) {
+    width: 353px;
+  }
+
+  thead th:nth-child(4) {
+    width: 158px;
+  }
+}

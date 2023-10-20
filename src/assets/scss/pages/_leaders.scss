@@ -1,0 +1,95 @@
+@import '../mixins';
+@import '../variables';
+
+.containerPedestal {
+  @include displayFlexAIC;
+  justify-content: center;
+  // margin-bottom: 100px;
+  @media (max-width: 700px) {
+    display: block;
+    margin-bottom: 0px;
+  }
+}
+
+.tableForLeaders {
+  table {
+    min-width: 770px;
+    overflow: hidden;
+  }
+
+  td {
+    padding: 25px 20px;
+    @media (max-width: $largeScreens) {
+      padding: 9px 12px;
+    }
+  }
+
+  thead th:nth-child(1) {
+    width: 16%;
+    @media (max-width: $largeScreens) {
+      width: 77px;
+    }
+  }
+
+  thead th:nth-child(2) {
+    width: 23%;
+    @media (max-width: $largeScreens) {
+      width: 202px;
+    }
+  }
+
+  thead th:nth-child(3) {
+    width: 8%;
+    text-align: center;
+    @media (max-width: $largeScreens) {
+      width: 77px;
+    }
+  }
+
+  tbody td:nth-child(3) {
+    text-align: center;
+  }
+
+  thead th:nth-child(4) {
+    width: 10%;
+    text-align: center;
+    @media (max-width: $largeScreens) {
+      width: 110px;
+    }
+  }
+
+  tbody td:nth-child(4) {
+    text-align: center;
+    color: $lightPurple;
+  }
+
+  thead th:nth-child(5) {
+    width: 10%;
+    text-align: center;
+    @media (max-width: $largeScreens) {
+      width: 94px;
+    }
+  }
+
+  tbody td:nth-child(5) {
+    text-align: center;
+    color: $lightPurple;
+  }
+
+  thead th:nth-child(6) {
+    width: 33%;
+    text-align: center;
+    @media (max-width: $largeScreens) {
+      width: 210px;
+    }
+  }
+
+  tbody td:nth-child(6) {
+    text-align: center;
+    color: $lightPurple;
+  }
+}
+.boxButtonLeaders {
+  display: flex;
+  justify-content: end;
+}

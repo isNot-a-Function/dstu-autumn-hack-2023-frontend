@@ -1,0 +1,26 @@
+@import '../../variables';
+
+.green {
+  color: $green;
+}
+
+.orange {
+  color: $orange;
+}
+
+.gray {
+  color: $lightPurple;
+}
+
+.tableStatus {
+  display: flex;
+  align-items: center;
+}
+
+.circle {
+  background-color: $green;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin-right: 11px;
+}

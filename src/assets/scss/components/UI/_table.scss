@@ -1,0 +1,82 @@
+@import '../../variables';
+
+.tablePurple {
+  color: $lightPurple;
+  font-size: 16px;
+  font-weight: 600;
+
+  @media (max-width: 425px) {
+    font-size: 14px;
+  }
+}
+
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  overflow: hidden;
+  min-width: $miniWebScreens;
+
+  * {
+    text-align: left;
+  }
+  .blackBtn,
+  .lightBtn {
+    @media (max-width: 425px) {
+      height: 30px;
+    }
+  }
+}
+
+td {
+  padding: 15px 20px;
+}
+
+tbody tr {
+  margin-bottom: 4px;
+  border: 4px solid $darkBlue;
+
+  border-radius: 12px;
+  @media (max-width: 425px) {
+    font-size: 14px;
+  }
+}
+
+thead {
+  color: white;
+  text-shadow: 1px 1px 1px black;
+
+  th {
+    padding: 20px;
+    color: $lightPurple;
+    font-size: 16px;
+    font-weight: 600;
+
+    @media (max-width: 425px) {
+      font-size: 14px;
+    }
+  }
+}
+
+tbody tr:nth-child(odd) {
+  background-color: $tableLidhtDark;
+}
+
+tbody tr:nth-child(even) {
+  background-color: $tableDark;
+}
+
+tbody tr td:first-child {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+tbody tr td:last-child {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+tbody {
+  tr.marginTableItem {
+    height: 12px;
+  }
+}

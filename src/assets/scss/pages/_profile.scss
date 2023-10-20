@@ -1,0 +1,194 @@
+@import "../mixins";
+@import "../variables";
+.profile-top {
+  background: transparent;
+  border: 2px solid #b79b83;
+  border-radius: 12px;
+  margin-top: 20px;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 28px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &_inner {
+    height: 100%;
+    p {
+      padding-top: 8px;
+    }
+    width: 100%;
+    @include displayFlexAIC;
+    justify-content: space-between;
+    @media (max-width: $largeScreens) {
+      justify-content: center;
+    }
+  }
+  @media (max-width: $largeScreens) {
+    height: 166px;
+  }
+}
+
+.left-side {
+  @include displayFlexAIC;
+  margin: 64px 0;
+  @media (max-width: $largeScreens) {
+    margin: 37px 0;
+  }
+}
+
+.logo {
+  height: 135px;
+  width: 135px;
+  cursor: pointer;
+  border-radius: 50%;
+  @media (max-width: $largeScreens) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.user {
+  @include displayFlexAIC;
+  margin-left: 21px;
+  @media (max-width: $largeScreens) {
+    margin-left: 12px;
+  }
+
+  &-name {
+    font-size: 32px;
+    font-weight: 700;
+    @media (max-width: $largeScreens) {
+      font-size: 24px;
+    }
+  }
+
+  svg {
+    margin-left: 8px;
+  }
+}
+
+.exitBtn {
+  width: 160px;
+  height: 50px;
+
+  span {
+    height: 12px;
+  }
+}
+
+.profile-nav {
+  @include displayFlexAIC;
+  justify-content: space-between;
+
+  &__btn {
+    padding: 15px;
+    font-size: 20px;
+    width: 50%;
+    text-align: center;
+    border-radius: 12px 12px 0px 0px;
+    background-color: transparent;
+    cursor: pointer;
+
+    @media (max-width: $largeScreens) {
+      font-size: 16px;
+    }
+
+    &__active {
+      background-color: $darkBlue;
+    }
+  }
+}
+.avatarInProfile {
+  border-radius: 50%;
+  width: 135px;
+  height: 135px;
+  // @media (max-width: $largeScreens) {
+  //   width: 40px;
+  //   height: 40px;
+  // }
+}
+.steam-logo {
+  width: 32px;
+  height: 32px;
+  @media (max-width: $largeScreens) {
+    width: 24px;
+    height: 24px;
+  }
+}
+.avatar-in-navbar {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+}
+.box-rating-in-profile {
+  height: 100%;
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+}
+.switch-roles-box {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid #384661;
+  border-radius: 12px;
+  background-color: transparent;
+}
+.item-switch-role {
+  width: 50%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-right: 12px;
+  padding-left: 12px;
+  color: #384661;
+}
+.item-switch-role-active {
+  background-color: #384661;
+  color: #f2f3ee;
+  border-radius: 12px;
+}
+.box-profile {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 0.8fr 0.2fr;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.bezBtn {
+  background-color: #dac2aa;
+  padding: 5px;
+  border-radius: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: white;
+}

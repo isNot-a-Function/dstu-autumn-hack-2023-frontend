@@ -1,0 +1,28 @@
+@import '../../variables';
+
+.inventoryImgWrap {
+  width: 60px;
+  height: 60px;
+  margin-right: 12px;
+}
+
+.inventorySubjectWrap {
+  display: flex;
+  align-items: center;
+}
+
+.activateBtn {
+  width: 100%;
+  height: 50px;
+}
+
+.cancelBtn {
+  padding: 15px 24px;
+  margin: 0;
+}
+
+.inventoryBtn {
+  @media (max-width: $largeScreens) {
+    height: 40px;
+  }
+}

@@ -1,0 +1,26 @@
+@import "./variables";
+@import "./normolize";
+@import "./mixins";
+@import "./global-styles";
+
+@import "./components/UI/btn";
+@import "./components/UI/table";
+//cтраницы
+@import "./pages/profile";
+@import "./pages/information";
+@import "./pages/main";
+@import "./pages/history-balance";
+//компоненты
+
+@import "./components/megaBuilderKitModal/megaBuilderKitModal";
+@import "./components/UI/modal";
+@import "./components/navbar";
+@import "./components/footer/footer";
+@import "./components/footer/monitoring-modal";
+@import "./components/profile/inventory";
+@import "./components/leaders/pedestal-item";
+@import "./components/select-server-modal/select-server-modal";
+@import "./components/funds-transfer-modal/funds-transfer-modal";
+@import "react-datepicker/dist/react-datepicker";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/react-datepicker/2.8.0/react-datepicker.min.css");
+@import "~react-datepicker/dist/react-datepicker.css";

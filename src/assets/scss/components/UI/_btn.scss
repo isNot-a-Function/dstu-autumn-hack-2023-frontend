@@ -1,0 +1,68 @@
+@import "../../mixins";
+@import "../../variables";
+
+.btn {
+  @include displayFlexAIC;
+  justify-content: center;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+
+  svg {
+    margin-right: 12px;
+  }
+}
+
+.blackBtn {
+  background-color: transparent;
+  border: 2px solid $purple;
+  color: $lightPurple;
+  transition: 0.2s;
+
+  &:hover {
+    border-color: $lightBorderForBlackBtn;
+  }
+  &:disabled {
+    &:hover {
+      border-color: $purple;
+    }
+  }
+  span {
+    color: $lightPurple;
+  }
+}
+
+.lightBtn {
+  background-color: #3d5d6d;
+  color: white;
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+
+  &:hover {
+    background-position: left bottom;
+    background-color: #466d80;
+  }
+  span {
+    color: white;
+  }
+}
+
+.wideBtn {
+  width: 100%;
+  padding: 16px 0;
+}
+
+.greenBtn {
+  border-radius: 12px;
+  background: linear-gradient(270deg, #18be5a 0.01%, #1c7e26 100%);
+  color: $white;
+  transition: 0.2s;
+
+  &:hover {
+    background: linear-gradient(270deg, #28ec77 0.01%, #20a82e 100%);
+  }
+  span {
+    color: $white;
+  }
+}

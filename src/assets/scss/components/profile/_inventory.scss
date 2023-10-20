@@ -1,0 +1,57 @@
+@import '../../variables';
+
+.sortBlock {
+  display: flex;
+  align-items: center;
+  margin-top: 48px;
+  @media (max-width: $largeScreens) {
+    margin-top: 0px;
+  }
+}
+
+.filterBtn {
+  width: 210px;
+  height: 50px;
+  margin-left: 12px;
+}
+
+.tableForInventory {
+  table {
+    min-width: 1280px;
+  }
+
+  td {
+    min-height: 62px;
+    padding: 15px 20px;
+    @media (max-width: $largeScreens) {
+      padding: 9px 12px;
+    }
+    &:nth-child(5) {
+      padding: 0;
+    }
+  }
+
+  thead th:nth-child(1) {
+    min-width: 8%;
+  }
+
+  thead th:nth-child(2) {
+    min-width: 20%;
+  }
+
+  thead th:nth-child(3) {
+    min-width: 12%;
+  }
+
+  thead th:nth-child(4) {
+    min-width: 12%;
+  }
+
+  thead th:nth-child(5) {
+    min-width: 13%;
+  }
+
+  thead th:nth-child(6) {
+    min-width: 130px;
+  }
+}
