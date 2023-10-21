@@ -94,7 +94,7 @@ const Menu = ({
   return (
     <div className="list-filter">
       <div className="header-box-filter">
-        <h1>CФЕРЫ ДЕЯТЕЛЬНОСТИ</h1>
+        <h1>CПЕЦИЛИЗАЦИИ</h1>
         {activeSection.length !== 0 && (
           <p
             onClick={() => {

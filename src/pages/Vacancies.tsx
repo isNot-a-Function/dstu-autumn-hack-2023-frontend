@@ -8,6 +8,7 @@ import Pagination from "../components/Pagination/Pagination";
 import CreateCaseModal from "../components/Main/CreateCaseModal";
 import ReactDatePicker from "react-datepicker";
 import CustomSelect from "../components/UI/CustomSelect";
+import Case from "../components/Main/Case";
 
 const cityes = [
   {
@@ -32,7 +33,7 @@ const cityes = [
   },
 ];
 
-const Main = () => {
+const Vacancies = () => {
   const [activeSection, setActiveSection] = useState<string[]>([]);
   const [openSection, setOpenSection] = useState<number | null>(null);
   const [sortValue, setSortValue] = useState<string | null>(null);
@@ -88,69 +89,23 @@ const Main = () => {
   };
 
   return (
-    <div className="box-main-page container">
-      <div>
-        <div className="box-filters">
-          <div className="item-filters">
-            <p>Дата начала поездки</p>
-            <ReactDatePicker
-              id="startDate"
-              minDate={new Date()}
-              wrapperClassName="datePicker"
-              selected={dateValue}
-              //@ts-ignore
-              onChange={(date) => setDateValue(date)}
-              dateFormat="dd.MM.yyyy"
-            />
-          </div>
-          <div className="item-filters">
-            <p>Город отправления</p>
-            <CustomSelect
-              value={selectCity1}
-              options={cityes}
-              onChange={setSelectCity1}
-              isHaveIcon={false}
-              width={"200px"}
-              heightSelect={45}
-              paddingIndicator={0}
-              paddingContainer={12}
-              backgroundColor={"#171226"}
-              menuPlacement={"bottom"}
-            />
-          </div>
-          <div className="item-filters">
-            <p>Город прибытия</p>
-            <CustomSelect
-              value={selectCity2}
-              options={cityes}
-              onChange={setSelectCity2}
-              isHaveIcon={false}
-              width={"200px"}
-              heightSelect={45}
-              paddingIndicator={0}
-              paddingContainer={12}
-              backgroundColor={"#171226"}
-              menuPlacement={"bottom"}
-            />
-          </div>
-        </div>
-
-        <div className="box-list-cases">
-          {/* {flights?.flights.map((item) => (
-            <TrainCard data={item} key={item?.id} />
-          ))} */}
-        </div>
+    <div className="box-vacancies-page container">
+      <div className="box-list-cases">
+        {[1,2,34].map((item) => (
+          <Case />
+        ))}
       </div>
+
       <div style={{ paddingRight: 12, top: 80 }}>
-        {/* <Menu
+        <Menu
           setActiveSection={setActiveSection}
           activeSection={activeSection}
           openSection={openSection}
           setOpenSection={setOpenSection}
-        /> */}
+        />
       </div>
     </div>
   );
 };
 
-export default Main;
+export default Vacancies;

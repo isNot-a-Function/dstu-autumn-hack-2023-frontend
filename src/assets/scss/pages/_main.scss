@@ -58,6 +58,30 @@
   }
 }
 
+.box-vacancies-page {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 0.8fr 0.2fr;
+  column-gap: 20px;
+  padding-bottom: 20px;
+  align-items: start;
+  .lightBtn {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 14px;
+    margin-right: 12px;
+  }
+}
+
+.box-btn-case {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
 .list-filter {
   display: flex;
   flex-direction: column;
@@ -65,11 +89,12 @@
   // background-color: #87501d;
   // margin-right: 12px;
   margin-top: 20px;
-  border: 2px solid #87501d;
+  background-color: #333237;
+  // border: 2px solid #87501d;
 
   h1 {
     padding-left: 12px;
-    color: #87501d;
+    color: #3aaa35;
     font-size: 20px;
   }
   p {

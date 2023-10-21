@@ -14,10 +14,10 @@ export interface UserData {
 
 export interface ISignUpUser {
   email: string;
-  firstname: string;
-  lastname: string;
+  // firstname: string;
+  // lastname: string;
   password: string;
-  phone: string;
+  // phone: string;
 }
 
 export interface ISignInUser {

@@ -12,12 +12,12 @@ import { getHours } from "../utils/getHours";
 import CreateResponseModal from "../components/Main/CreateResponseModal";
 import { userApi } from "../store";
 import { useNavigate } from "react-router-dom";
-import Case from "../components/Main/TrainCard";
+import Case from "../components/Main/Case";
 import Pagination from "../components/Pagination/Pagination";
 import ConfirmationModal from "../components/Modals/ConfirmationModal";
 import UpdateProfileModal from "../components/Main/UpdateProfile";
 import { flightApi } from "../store";
-import TrainCard from "../components/Main/TrainCard";
+import TrainCard from "../components/Main/Case";
 import ChangeParametrsModal from "../components/Main/ChangeParametrsModal";
 
 const sortListEx = [
@@ -136,16 +136,16 @@ const Profile = () => {
         </div>
         <div>
           <div className="box-list-cases">
-            {tickets?.tickets?.map((item: any) => {
+            {/* {tickets?.tickets?.map((item: any) => {
               return (
-                <TrainCard
-                  data={item?.flightPlace?.flight}
-                  isHaveTicket={true}
-                  place={item?.flightPlace?.place}
-                  cost={item?.flightPlace?.cost}
-                />
+                // <TrainCard
+                //   data={item?.flightPlace?.flight}
+                //   isHaveTicket={true}
+                //   place={item?.flightPlace?.place}
+                //   cost={item?.flightPlace?.cost}
+                // />
               );
-            })}
+            })} */}
           </div>
         </div>
       </div>

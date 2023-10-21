@@ -11,6 +11,7 @@ import Flight from "./pages/Flight";
 import HistoryBalance from "./pages/HistoryBalance";
 import User from "./pages/UserPage";
 import Chat from "./pages/Chat";
+import CreateTest from "./pages/CreateTest";
 
 function App() {
   let vh = window.innerHeight * 0.01;
@@ -30,6 +31,7 @@ function App() {
         <Route path="/" element={<MainLayout />}>
           <Route path="/" element={<Navigate to={"/store"} />} />
           <Route path="store" element={<Main />} />
+          <Route path="create/test" element={<CreateTest />} />
           <Route path="profile" element={<Profile />} />
           <Route path="profile/:id" element={<User />} />
           <Route path="login" element={<Login />} />
