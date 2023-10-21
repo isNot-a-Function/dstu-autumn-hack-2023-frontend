@@ -1,0 +1,152 @@
+@import "../../mixins";
+@import "../../variables";
+
+@keyframes inAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes outAnimation {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}
+
+.mountedStyle {
+  animation: inAnimation 300ms ease-in;
+}
+
+.unmountedStyle {
+  animation: outAnimation 300ms ease-out;
+  animation-fill-mode: forwards;
+}
+
+.modal {
+  cursor: default;
+  right: 0;
+  bottom: 0;
+  display: "flex";
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(13, 10, 22, 0.6);
+  backdrop-filter: blur(6px);
+  @include displayFlexAIC;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.4s;
+  width: 100vw;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+}
+
+.modalActive {
+  z-index: 100;
+  opacity: 1;
+  pointer-events: all;
+
+  @media (max-width: 425px) {
+    z-index: 10000000;
+  }
+  body {
+    overflow: hidden;
+  }
+}
+
+.modalContent {
+  z-index: 12;
+  padding: 32px;
+  border-radius: 12px;
+
+  overflow: auto;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  // transform: scale(0.5);
+  // transition: 0.4s;
+  position: relative;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  // animation: dropTop 0.3s linear;
+
+  // &::-webkit-scrollbar {
+  //   display: none;
+  // }
+
+  // &Active {
+  //   transform: scale(1);
+  // }
+  @media (max-width: 1000px) {
+    margin-top: 0;
+  }
+
+  @media (max-width: 425px) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 0;
+    height: 100vh;
+    max-height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    padding: 20px 12px;
+  }
+}
+
+.modalBackground {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 200px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #384661;
+}
+
+.modalHeader,
+.modalHeaderSmallBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+
+  &SmallBottom {
+    margin-bottom: 20px;
+  }
+
+  &Title {
+    width: fit-content;
+    color: #ff0000;
+    font-size: 32px;
+    font-weight: 700;
+
+    @media (max-width: 625px) {
+      font-size: 28px;
+    }
+    @media (max-width: 375px) {
+      font-size: 22px;
+    }
+  }
+
+  svg {
+    cursor: pointer;
+  }
+}
+
+.modalTest {
+  width: 470px;
+  height: fit-content;
+}

@@ -1,0 +1,22 @@
+@import '../../variables';
+@import '../../mixins';
+
+.userBlock {
+  @include displayFlexAIC;
+}
+
+.userImg {
+  height: 40px;
+  width: 40px;
+  margin-right: 12px;
+  border-radius: 50%;
+
+  &None {
+    background-color: $white;
+  }
+
+  @media (max-width: $largeScreens) {
+    height: 32px;
+    width: 32px;
+  }
+}

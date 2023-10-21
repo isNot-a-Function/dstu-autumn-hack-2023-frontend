@@ -1,0 +1,32 @@
+.boxPedestal {
+  display: flex;
+  justify-content: space-around;
+}
+.boxMobilePedestal {
+}
+.scrollContainer {
+  transition: 'all 3s';
+  width: 100%;
+  // overflow: scroll;
+  padding-right: 12px;
+  padding-left: 12px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+.buttonArrow {
+  font-size: 60px;
+  width: 40px;
+  height: 30px;
+  background: transparent;
+  outline: none; /* Для синий ободки */
+  border: 0;
+  color: #8774b8;
+  opacity: 0.9;
+  &:hover {
+    opacity: 1;
+  }
+  &:disabled {
+    opacity: 0.3;
+  }
+}

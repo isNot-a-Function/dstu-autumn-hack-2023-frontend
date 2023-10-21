@@ -1,0 +1,19 @@
+@import '../variables';
+
+.discount {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  border-radius: 6px;
+  background-color: $red;
+  display: inline-flex;
+  transform: rotate(4deg);
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  color: $white;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+}

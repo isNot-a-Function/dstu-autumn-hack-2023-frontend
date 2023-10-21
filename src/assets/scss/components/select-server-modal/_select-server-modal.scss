@@ -1,0 +1,91 @@
+@import '../../variables';
+
+.selectServerModal {
+  width: 406px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &InLeaders {
+    z-index: 99;
+  }
+}
+
+.selectServer {
+  margin-bottom: 20px;
+  max-height: 400px;
+  overflow: auto;
+  width: calc(100% + 10px);
+  padding-right: 10px;
+
+  @media (max-width: 425px) {
+    max-height: 100%;
+  }
+
+  &::-webkit-scrollbar {
+    width: 2px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #140f21;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border: none;
+    border-radius: 100px;
+    background-color: $lightPurple;
+  }
+}
+
+.radio-label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 12px;
+  border-radius: 12px;
+  background-color: #140f21;
+  margin-bottom: 4px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.radio-input {
+  margin: 0;
+  visibility: hidden;
+}
+
+.radio-input:checked + span {
+  border: 2px solid $radioBlue;
+}
+
+.radio-input:checked + span:after {
+  opacity: 1;
+}
+
+.custom-radio {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #9a9a9a;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+}
+
+.custom-radio::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: $radioBlue;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.2s;
+}

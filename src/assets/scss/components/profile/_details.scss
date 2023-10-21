@@ -1,0 +1,105 @@
+@import '../../variables';
+.balance {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 35px;
+  justify-content: space-between;
+  @media (max-width: $largeScreens) {
+    flex-direction: column;
+    margin-top: 32px;
+    align-items: start;
+    width: 100%;
+    margin-bottom: 12px;
+  }
+}
+
+.balanceTitle {
+  color: $lightPurple;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.balanceCount {
+  color: $white;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.balanceBtnBlock {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+  @media (max-width: $largeScreens) {
+    width: 100%;
+    margin-left: 0;
+    height: 40px;
+  }
+}
+
+.balanceBtn {
+  width: 210px;
+  height: 50px;
+  margin-left: 12px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+  @media (max-width: $largeScreens) {
+    width: 100%;
+    margin-left: 0;
+    height: 40px;
+  }
+}
+
+.tableForDetails {
+  td {
+    padding: 35px 20px;
+    @media (max-width: $largeScreens) {
+      padding: 17px 16px;
+    }
+  }
+
+  thead th:nth-child(1) {
+    width: 18%;
+  }
+
+  thead th:nth-child(2) {
+    width: 15%;
+  }
+
+  thead th:nth-child(3) {
+    width: 20%;
+  }
+
+  thead th:nth-child(4) {
+    width: 12%;
+  }
+
+  thead th:nth-child(5) {
+    width: 20%;
+  }
+
+  thead th:nth-child(6) {
+    width: 15%;
+  }
+}
+.topDetails {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media (max-width: $largeScreens) {
+    flex-direction: column;
+    align-items: start;
+    padding-right: 12px;
+    padding-left: 12px;
+    box-sizing: border-box;
+  }
+}
+.containerSelect {
+  width: 200px;
+}
+.balanceInfo {
+  margin-bottom: 12px;
+}

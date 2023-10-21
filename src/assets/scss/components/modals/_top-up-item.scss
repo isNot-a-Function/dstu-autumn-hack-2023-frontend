@@ -1,0 +1,104 @@
+@import "../../variables";
+
+.root {
+  opacity: 0.8;
+  cursor: pointer;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  background-color: #140f21;
+  position: relative;
+  width: 158px;
+  height: 118px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 60px auto;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+
+  &Active {
+    border: $blue 1px solid;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+
+  @media (max-width: 708px) {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 9px 12px;
+  }
+}
+
+.percentages {
+  position: absolute;
+  top: 10px;
+  right: 8px;
+  border-radius: 6px;
+  background-color: rgba(255, 184, 0, 0.1);
+  padding: 4px;
+  margin-left: 12px;
+
+  div {
+    height: 12px;
+    color: $orange;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  @media (max-width: 708px) {
+    display: none;
+  }
+}
+
+.top {
+  width: 60px;
+  height: 60px;
+  margin: 14px auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 708px) {
+    margin: 0;
+  }
+}
+
+.img {
+  width: 80%;
+  height: 80%;
+}
+
+.topTitle {
+  color: $lightPurple;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+
+  @media (max-width: 708px) {
+    text-align: left;
+    font-size: 14px;
+    color: $white;
+  }
+}
+
+.bottom {
+  @media (max-width: 708px) {
+    display: flex;
+    gap: 5px;
+  }
+}
+
+.bottomTitle {
+  color: $white;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+
+  @media (max-width: 708px) {
+    text-align-last: left;
+  }
+}

@@ -1,0 +1,69 @@
+.avatarUser {
+  width: 156px;
+  height: 156px;
+  border-radius: 50%;
+  border: 5px solid #fff064;
+  margin-left: 12px;
+}
+.placeUser {
+  position: absolute;
+}
+.containerPedestalItem {
+  @include displayFlexAIC;
+  flex-direction: column;
+  // width: 322px;
+}
+.boxAvatarUser {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 209px;
+  height: 209px;
+  position: 'relative';
+}
+.baseTextPedestalItem {
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+}
+.namePedestalItem {
+  margin-bottom: 10px;
+}
+.pointsRedestalItem {
+  margin-bottom: 12px;
+}
+.boxStatisticInPedestalItem {
+  @include displayFlexAIC;
+  gap: 20px;
+}
+.miniBoxStatistic {
+  @include displayFlexAIC;
+  flex-direction: column;
+}
+.labelStatictic {
+  color: #8774b8;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+}
+.countStatictic {
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  margin-top: 6px;
+}
+.textPlace {
+  position: relative;
+  top: 100;
+  color: #814629;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  top: 74px;
+  right: 84px;
+}

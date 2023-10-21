@@ -1,0 +1,115 @@
+.headerFooter {
+  @include displayFlexAIC;
+  flex-direction: row;
+  margin-bottom: 4px;
+}
+.titleFooter {
+  margin-left: 8px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.labelCountFooter {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 32px;
+  // @media (max-width: $largeScreens) {
+  //   margin-bottom: 0px;
+  // }
+}
+.footerBox {
+  display: grid;
+  grid-template-columns: 311px 311px 311px 311px;
+  column-gap: 12px;
+  row-gap: 32px;
+  padding-bottom: 64px;
+  border-bottom: 1px solid #231943;
+
+  @media (max-width: 1280px) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 55px;
+  }
+
+  @media (max-width: 900px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 45px;
+    row-gap: 32px;
+  }
+}
+.containerFooter {
+  margin-top: 120px;
+  @media (max-width: $largeScreens) {
+    margin-top: 20px;
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+}
+.bottomFooter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  p {
+    max-width: 681px;
+    color: #8774b8;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: pre-wrap;
+  }
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  @media (max-width: $largeScreens) {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}
+.infoRightBootomFooter {
+  @include displayFlexAIC;
+  flex-direction: row;
+  gap: 32px;
+  @media (max-width: $largeScreens) {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.bottomDopInfo {
+  align-items: start;
+  @media (max-width: $largeScreens) {
+    align-items: center;
+  }
+}
+.listBottom {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: start;
+  @media (max-width: $largeScreens) {
+    align-items: center;
+  }
+}
+.conditionalsLabel {
+  cursor: pointer;
+}
+.contactsFooter {
+  @include displayFlexAIC;
+  gap: 24px;
+  // margin-left: 32px;
+}
+.iconContactFooter {
+  g {
+    fill: #372d55;
+    stroke: #372d55;
+    opacity: 0.7;
+  }
+}
+.boxStaticticMobile {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  // padding-right: 12px;
+  // padding-left: 12px;
+}

@@ -1,0 +1,38 @@
+.monitoringModal {
+  width: 482px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.monitoringModalContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  gap: 12px;
+  padding-bottom: 20px;
+  max-height: 500px;
+  height: 100%;
+  overflow-y: auto;
+  @media (max-width: 425px) {
+    max-height: fit-content;
+  }
+  @media (max-width: $largeScreens) {
+    padding-right: 20px;
+  }
+
+  &::-webkit-scrollbar {
+    width: 2px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #f2f3ee;
+    margin-left: 12px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border: none;
+    border-radius: 100px;
+    background-color: white;
+  }
+}
